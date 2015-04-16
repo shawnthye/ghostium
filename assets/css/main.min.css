@@ -21,7 +21,7 @@
  .social-bar > .social-bar-height {
  	display: inline-block;
  	vertical-align: top;
- 	height: 70px;
+ 	height: 3em;
  	width: 0px;
  }
 
@@ -30,7 +30,7 @@
  	display: inline-block;
  	/*margin-right: 5px*/
  	vertical-align: top;
- 	margin-right: .35em;
+ 	margin-right: .5em;
  }
 
  .social-icon {
