@@ -2,11 +2,39 @@
   <div {{#if @blog.cover}}data-load-image="{{@blog.cover}}"{{/if}} class="cover-image"></div>
   <div class="cover-container">
     {{#if @blog.logo}}
-      <a href="{{@blog.url}}" class="cover-logo" data-pjax>
-        <img src="{{@blog.logo}}" alt="Blog Logo">
-      </a>
+    <a href="{{@blog.url}}" class="cover-logo" data-pjax>
+      <img src="{{@blog.logo}}" alt="Blog Logo">
+    </a>
     {{/if}}
     <h1 class="cover-title">{{@blog.title}}</h1>
+
+    <div class="social-bar">
+      <div class="social-bar-height">   
+      </div> 
+
+      <div class="social-item">
+        <a class="social-icon" target="_blank" title="+shawnthye" href="https://www.google.com/+shawnthye">
+          <i class="fa fa-google-plus"></i>
+          <span class="label">Google+</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a class="social-icon" target="_blank" title="shawnthye on GitHub" href="https://github.com/shawnthye">
+          <i class="fa fa-github"></i>
+          <span class="label">GitHub</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a class="social-icon" target="_blank" title="Shawn Thye on LinkedIn" href="http://my.linkedin.com/in/shawnthye">
+          <i class="fa fa-linkedin"></i>
+          <span class="label">LinkedIn</span>
+        </a>
+      </div>
+
+    </div>
+
     <p class="cover-description">{{@blog.description}}</p>
   </div>
 </aside>
