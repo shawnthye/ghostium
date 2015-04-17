@@ -25,11 +25,13 @@
 
     {{> custom/meta this}}
 
-    <link href="//fonts.googleapis.com/" rel="dns-prefetch">
-    <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!-- <link href="//fonts.googleapis.com/" rel="dns-prefetch">
+    <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet"> -->
 
     <meta name="theme-color" content="#232323">
     <link rel="stylesheet" href="{{asset 'css/main.min.css'}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset 'css/prism.css'}}" />  
 
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{asset 'favicons/apple-touch-icon-144x144.png'}}">
@@ -89,6 +91,7 @@
 
     {{ghost_foot}}
 
+    <script type="text/javascript" src="{{asset 'js/prism.js'}}"></script>    
     <script src="{{asset 'js/foot-scripts.min.js'}}"></script>
 
     <script type="text/javascript">
