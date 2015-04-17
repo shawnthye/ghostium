@@ -19,6 +19,7 @@
     <meta name="twitter:title" content="{{meta_title}}">
     <meta name="twitter:description" content="{{meta_description}}">
 
+    <meta name="application-name" content="{{@blog.title}}">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{meta_title}}">
     <meta property="og:description" content="{{meta_description}}">
@@ -28,6 +29,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 
     <meta name="theme-color" content="#232323">
+    <meta name="msapplication-TileColor" content="#232323">
     <link rel="stylesheet" href="{{asset 'css/main.min.css'}}"/>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/darkula.min.css">
     
@@ -35,6 +37,7 @@
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{asset 'favicons/apple-touch-icon-144x144.png'}}">
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{asset 'favicons/apple-touch-icon-152x152.png'}}">
+    <meta name="msapplication-TileImage" content="{{asset 'favicons/mstile-144x144.png'}}">
     <link rel="icon" type="image/png" href="{{asset 'favicons/favicon-196x196.png'}}" sizes="196x196">
     <link rel="icon" type="image/png" href="{{asset 'favicons/favicon-32x32.png'}}" sizes="32x32">
     <link rel="icon" type="image/png" href="{{asset 'favicons/favicon-16x16.png'}}" sizes="16x16">
@@ -73,7 +76,7 @@
       ga('send', 'pageview');
     </script>
   </head>
-  <body class="{{body_class}}">
+  <body onload="initHighlighting()" class="{{body_class}}">
 
     {{> drawer this}}
 
