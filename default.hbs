@@ -31,7 +31,7 @@
     <meta name="theme-color" content="#232323">
     <meta name="msapplication-TileColor" content="#232323">
     <link rel="stylesheet" href="{{asset 'css/main.min.css'}}"/>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/darkula.min.css">
+    <link rel="stylesheet" href="{{asset 'css/highlight.darkula.min.css'}}"/>
     
 
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
@@ -94,9 +94,15 @@
     {{ghost_foot}}
 
     <script src="{{asset 'js/foot-scripts.min.js'}}"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+    <script src="{{asset 'js/highlight.min.js'}}"></script>
     <script type="text/javascript">
       hljs.initHighlightingOnLoad();
+      // $(document).ready(function() {
+      //   $('pre code').each(function(i, block) {
+      //     hljs.highlightBlock(block);
+      //   });
+      // });
+      
 
       if(GHOSTIUM.haveGA) {
         (function(g,h,o,s,t,z){g.GoogleAnalyticsObject=s;g[s]||(g[s]=
